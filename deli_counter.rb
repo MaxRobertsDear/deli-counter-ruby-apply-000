@@ -9,13 +9,13 @@ def line ( katz_deli )
     katz_deli.each_with_index { | value, index | 
     x += "#{ index.to_i +1 }. #{ value }"
     puts "#{x}"
-  end
+    }
 end
   
 def take_a_number ( katz_deli, name )
     line_length = katz_deli.length + 1 
     katz_deli.each << name
-    puts "Welcome, #{name}. You are number #{"line_length} in line."
+    puts "Welcome, #{name}. You are number #{line_length} in line."
 end
 
 def now_serving ( katz_deli )
