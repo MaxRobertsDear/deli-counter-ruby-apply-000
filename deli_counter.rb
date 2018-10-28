@@ -10,6 +10,7 @@ def line ( katz_deli )
     x += "#{ index.to_i +1 }. #{ value }"
     puts "#{x}"
     }
+  end
 end
   
 def take_a_number ( katz_deli, name )
