@@ -4,7 +4,7 @@ katz_deli = []
 
 def take_a_number ( katz_deli, name )
     line_length = katz_deli.length + 1 
-    katz_deli.each << name
+    katz_deli << name
     puts "Welcome, #{name}. You are number #{line_length} in line."
 end
 
