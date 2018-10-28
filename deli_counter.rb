@@ -9,6 +9,20 @@ def take_a_number ( katz_deli, name )
 end
 
 
+def line ( katz_deli )
+  if katz_deli.length == 0 
+    puts "The line is currently empty."
+  else 
+    mesage = "The line is currently: "
+    katz_deli.each_with_index { | value, index | 
+    message += "#{ index.to_i +1 }. #{ value }"
+    }
+    puts "#{x}"
+  end
+end
+
+line(katz_deli)
+
 
 def now_serving ( katz_deli )
   being_served = katz_deli.shift
@@ -24,18 +38,7 @@ end
 
 
 
-def line ( katz_deli )
-  if katz_deli.length == 0 
-    puts "The line is currently empty."
-  else 
-    x = "The line is currently: "
-    katz_deli.each_with_index { | value, index | 
-    x += "#{ index.to_i +1 }. #{ value }"
-    }
-    puts "#{x}"
-  end
-  
-end
+
   
 
 
