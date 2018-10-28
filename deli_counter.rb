@@ -18,8 +18,9 @@ def line
     katz_deli.each_with_index { | value, index | 
     x += "#{ index.to_i +1 }. #{ value }"
     }
+    puts "#{x}"
   end
-  puts "#{x}"
+  
 end
   
 
